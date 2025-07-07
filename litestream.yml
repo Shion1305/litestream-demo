@@ -1,0 +1,8 @@
+dbs:
+  - path: /tmp/db.sqlite
+    wal:
+      compression: gzip
+    replicas:
+      - type: gcs
+        bucket: litestream-demo-go
+        prefix: demo
